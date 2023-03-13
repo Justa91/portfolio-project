@@ -1,6 +1,11 @@
 /*font-family: 'Nunito', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 
+:root {
+  --primary-color: rgb(39, 33, 66);
+  --secondary-color: rgb(102, 46, 237);
+}
+
 h1 {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
@@ -12,9 +17,19 @@ h1 {
 h2 {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
+  color: var(--primary-color);
 }
 
-p {
+footer {
+  background-color: rgb(249, 247, 254);
+  padding: 38px 140px;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
+}
+.overlay-text p {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -22,12 +37,12 @@ p {
   line-height: 35px;
 }
 
-img {
+.ovarlay-img {
   width: 100%;
+  margin-top: 62px;
 }
 
 .overlay {
-  margin-top: 135px;
   position: relative;
   text-align: center;
 }
@@ -37,4 +52,30 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 150px;
+}
+
+.navbar-margin {
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 48px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.navbar-text-color {
+  color: var(--primary-color);
+}
+
+.home-text-color {
+  color: var(--secondary-color);
+}
+
+.main {
+  margin: 100px 140px;
 }
