@@ -86,3 +86,166 @@ a {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
+.footer-rights {
+  text-align: end;
+}
+.footer-icons {
+  text-align: center;
+}
+
+@media (max-width: 1450px) {
+  .overlay-text {
+    top: 60%;
+  }
+  .overlay-text p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 66px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 1174px) {
+  .overlay-text p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 981px) {
+  .overlay-text p {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 901px) {
+  .overlay-text p {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 51px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 836px) {
+  .overlay-text {
+    top: 65%;
+  }
+  .overlay-text p {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 46px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 756px) {
+  .overlay-text {
+    top: 70%;
+  }
+  .overlay-text p {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 660px) {
+  .overlay-text {
+    top: 75%;
+  }
+  .overlay-text p {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 579px) {
+  .overlay-text p {
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 451px) {
+  .overlay-text {
+    top: 80%;
+  }
+  .overlay-text p {
+    font-size: 9px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 1;
+  }
+}
+@media (max-width: 353px) {
+  .overlay-text {
+    top: 80%;
+  }
+  .overlay-text p {
+    font-size: 9px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 15px;
+    line-height: 1;
+  }
+}
+@media (max-width: 301px) {
+  .overlay-text {
+    top: 82%;
+  }
+  .overlay-text p {
+    font-size: 5px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-icons,
+  .footer-rights {
+    text-align: left;
+  }
+  .wrapper {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  footer {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
