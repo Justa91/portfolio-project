@@ -6,38 +6,56 @@ font-family: 'Roboto', sans-serif;*/
   --secondary-color: rgb(102, 46, 237);
 }
 
-.overlay-text h1 {
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  font-size: 72px;
-  color: rgb(255, 255, 255);
-  line-height: 98px;
-}
-
-h2 {
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+.title-about,
+.title-recipe,
+.name {
   color: var(--primary-color);
+  font-family: "Nunito", sans-serif;
+}
+h2 {
+  font-weight: bold;
   font-size: 28px;
   margin-top: 20px;
   margin-bottom: 50px;
 }
 
 h3 {
-  font-family: "Nunito";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
 }
 
-p {
-  font-family: "Nunito";
+h4 {
+  margin-bottom: 25px;
   font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgb(248, 125, 161);
+}
+
+hr {
+  color: white;
+  border-bottom: dashed 1px #67d5d2;
+}
+
+p {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: var(--primary-color);
 }
 
 footer {
@@ -55,26 +73,49 @@ a {
   text-decoration: none;
 }
 
-.title-about {
-  font-family: "Nunito";
-  font-style: normal;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgb(102, 46, 237);
+}
+.overlay-text h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+  line-height: 98px;
+}
+.title-about,
+.title-recipe {
   font-weight: 700;
   font-size: 72px;
   line-height: 98px;
-  color: var(--primary-color);
+}
+
+.img-recipe-collection {
+  width: 760px;
 }
 
 .name {
-  font-family: "Nunito";
-  font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 87px;
-  color: var(--primary-color);
 }
 
 .img-girl {
   width: 460px;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .overlay-text p {
   font-family: "Nunito", sans-serif;
@@ -96,12 +137,6 @@ a {
 
 .main img {
   width: 100%;
-}
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -133,9 +168,11 @@ a {
   text-align: center;
 }
 
+/*media*/
 @media (max-width: 576px) {
   .footer-icons,
-  .footer-rights {
+  .footer-rights,
+  .contact-info {
     text-align: left;
   }
   .wrapper {
@@ -143,17 +180,20 @@ a {
     margin-top: 50px;
     margin-bottom: 20px;
   }
+
   footer {
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
-  .title-about {
+  .title-about,
+  .title-recipe {
     font-size: 50px;
   }
   .name {
     margin-bottom: 5px;
     font-size: 35px;
   }
+
   p {
     margin-bottom: 40px;
   }
@@ -164,145 +204,100 @@ a {
     margin-bottom: 12px;
     text-align: center;
   }
+  ul,
+  p,
+  h5 {
+    text-align: left;
+  }
 }
 
 /*media for overlay text*/
-@media (max-width: 1450px) {
+@media (max-width: 1500px) {
   .overlay-text {
     top: 60%;
   }
   .overlay-text p {
     font-size: 20px;
-  }
-  .overlay-text h1 {
-    font-size: 66px;
-    line-height: 1.2;
-  }
-}
-
-@media (max-width: 1174px) {
-  .overlay-text p {
-    font-size: 20px;
-  }
-  .overlay-text h1 {
-    font-size: 60px;
-    line-height: 1.2;
-  }
-}
-@media (max-width: 981px) {
-  .overlay-text p {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .overlay-text h1 {
-    font-size: 55px;
-    line-height: 1.2;
-  }
-}
-@media (max-width: 901px) {
-  .overlay-text p {
-    font-size: 17px;
     line-height: 1.2;
     font-weight: normal;
   }
   .overlay-text h1 {
-    font-size: 51px;
-    line-height: 1.2;
-  }
-}
-@media (max-width: 836px) {
-  .overlay-text {
-    top: 65%;
-  }
-  .overlay-text p {
-    font-size: 15px;
-    line-height: 1.2;
-    font-weight: normal;
-  }
-  .overlay-text h1 {
-    font-size: 46px;
-    line-height: 1.2;
+    font-size: 50px;
+    line-height: 1;
   }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 860px) {
   .overlay-text {
     top: 70%;
   }
   .overlay-text p {
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: normal;
-  }
-  .overlay-text h1 {
-    font-size: 40px;
-    line-height: 1.2;
-  }
-}
-@media (max-width: 660px) {
-  .overlay-text {
-    top: 75%;
-  }
-  .overlay-text p {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.2;
     font-weight: normal;
   }
   .overlay-text h1 {
     font-size: 35px;
-    line-height: 1.2;
+    line-height: 1;
   }
 }
-@media (max-width: 579px) {
+
+@media (max-width: 576px) {
+  .overlay-text {
+    top: 80%;
+  }
   .overlay-text p {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  .overlay-text h1 {
+    font-size: 31px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .overlay-text {
+    top: 88%;
+  }
+  .overlay-text p {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  .overlay-text h1 {
+    font-size: 23px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .overlay-text {
+    top: 90%;
+  }
+  .overlay-text p {
+    font-size: 8px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  .overlay-text h1 {
+    font-size: 18px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 308px) {
+  .overlay-text {
+    top: 95%;
+  }
+  .overlay-text p {
+    font-size: 6px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  .overlay-text h1 {
     font-size: 10px;
-    line-height: 1.2;
-    font-weight: normal;
-  }
-  .overlay-text h1 {
-    font-size: 27px;
-    line-height: 1.2;
-  }
-}
-@media (max-width: 451px) {
-  .overlay-text {
-    top: 80%;
-  }
-  .overlay-text p {
-    font-size: 9px;
-    line-height: 1.2;
-    font-weight: normal;
-  }
-  .overlay-text h1 {
-    font-size: 22px;
-    line-height: 1;
-  }
-}
-@media (max-width: 353px) {
-  .overlay-text {
-    top: 80%;
-  }
-  .overlay-text p {
-    font-size: 9px;
-    line-height: 1.2;
-    font-weight: normal;
-  }
-  .overlay-text h1 {
-    font-size: 15px;
-    line-height: 1;
-  }
-}
-@media (max-width: 301px) {
-  .overlay-text {
-    top: 82%;
-  }
-  .overlay-text p {
-    font-size: 5px;
-    line-height: 1.2;
-    font-weight: normal;
-  }
-  .overlay-text h1 {
-    font-size: 12px;
     line-height: 1;
   }
 }
