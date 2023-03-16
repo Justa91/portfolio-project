@@ -197,9 +197,13 @@ ul {
     margin-bottom: 20px;
   }
 
+  .p-info {
+    font-size: 15px;
+  }
+
   .title-about,
   .title-recipe {
-    font-size: 50px;
+    font-size: 45px;
   }
   .name {
     margin-bottom: 5px;
@@ -221,6 +225,7 @@ ul {
     line-height: 1.2;
     font-weight: normal;
   }
+
   .overlay-text h1 {
     font-size: 50px;
     line-height: 1;
